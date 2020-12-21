@@ -1,7 +1,7 @@
 // from data.js
 var tableData = data;
 
-// Get a Reference to the table body
+// Reference the table body
 var tbody = d3.select("tbody");
 
 // Use arrow function to append data.js to table body
@@ -35,7 +35,7 @@ function runEnter() {
   // Get the value property of the input element
   var inputValue = searchDate.property("value");
 
- // Filter the original table data
+ // Filter og table data
   var filteredData = tableData.filter(tableData => tableData.datetime === inputValue);
   
   // Create if statement to place filtered data into table
